@@ -1,8 +1,8 @@
-import { createSupabaseClient } from "@/utils/supabase/server";
+import { createClient } from "@/utils/supabase/server";
 import AuthPageSignOutButton from "@/components/auth-sign-out-button";
 
 export default async function ProtectedPage() {
-  const client = await createSupabaseClient();
+  const client = await createClient();
   const {
     data: { user },
   } = await client.auth.getUser();

@@ -1,4 +1,4 @@
-import { createSupabaseClient } from "@/utils/supabase/server";
+import { createClient as createSupabaseClient } from "@/utils/supabase/server";
 import { createClient } from "@updatedev/js";
 
 export async function createUpdateClient() {
